@@ -1,0 +1,124 @@
+@import @import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Overpass', sans-serif;
+}
+
+body {
+  padding: 10px;
+  background-image: url('https://cdn.pixabay.com/photo/2019/04/10/12/40/watercolour-4117017_960_720.png');
+  background-size: 50% 150%;
+  
+}
+.page-logo {
+  width: 220px;
+  height: 40px;
+  background-color: rgba(203, 33, 222, 0.50);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.container {
+  display: flex;
+  justify-content:center;
+  flex-direction: column;
+  align-items: center;
+}
+.calculadora {
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  flex-direction: column;
+  width: 23vw;
+  max-width: 25vw;
+  border-radius: 5px;
+  margin-top: 30px;
+  padding: 20px 5px 5px 20px;
+  background-color: #f0f0f0;
+  box-shadow: 1px 1px 20px #c9c9c9;
+}
+
+.displayCalculadora {
+  width: 85%;
+  max-width: 85%;
+  border-radius: 5px;
+  min-height: 100px;
+  max-height: auto;
+  background-color: white;
+  margin-bottom: 5px;
+  padding: 10px;
+  color: rgba(110, 0, 122, 0.6);
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.linhaCalculadora {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  background-color: transparent;
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+button {
+  width: 20%;
+  height: 45px;
+  font-weight: 600;
+  border: none;
+  border-radius: 5px;
+  background-color: white;
+  font-size: 18px;
+  color: #404040;
+}
+
+button:hover {
+  transform: scale(1.1);
+  background-color: rgba(217, 57, 0, 0.35);
+}
+
+button.operacoes {
+  background-color: rgba(203, 33, 222, 0.25);
+  color: rgba(110, 0, 122, 0.6);
+  font-size: 22px;
+}
+button.buttonResultado{
+  width: 46%;
+  background-color: rgba(147, 2, 163, 0.35);
+  color: rgba(110, 0, 122, 0.5);
+  font-size: 26px;
+}
+@media (max-width:479px) { /* smartphones, Android phones, landscape iPhone */ 
+  .calculadora {
+    width: 95vw;
+    max-width: 95vw;
+  }
+}
+
+@media (min-width:480px) { /* smartphones, Android phones, landscape iPhone */ 
+  .calculadora {
+    width: 95vw;
+    max-width: 95vw;
+  }
+}
+@media (min-width:600px) { /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+  .calculadora {
+    width: 60vw;
+    max-width: 60vw;
+  }
+}
+@media (min-width:801px) { /* tablet, landscape iPad, lo-res laptops ands desktops */ 
+  .calculadora {
+    width: 40vw;
+    max-width: 40vw;
+  }
+}
+@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ 
+  .calculadora {
+    width: 23vw;
+    max-width: 23vw;
+  }
+}
+@media (min-width:1281px) { /* hi-res laptops and desktops */ }

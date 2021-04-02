@@ -1,0 +1,40 @@
+<html>
+<head>
+    <title>
+        Imersão Dev - Aula 02
+    </title>
+</head>
+<body>
+  <div class="container">
+    <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-mentalista.svg" class="page-logo"
+            alt="">
+    <div class="calculadora">
+      <div class="displayCalculadora" id="displayCalculadora">0           </div>
+      <div class="linhaCalculadora">
+        <button type="button" onclick="adicionarNumero(7)">7</button>
+        <button type="button" onclick="adicionarNumero(8)">8</button>
+        <button type="button" onclick="adicionarNumero(9)">9</button>
+        <button type="button" class="operacoes" onclick="operacaoSoma()">+</button>
+      </div>
+      <div class="linhaCalculadora">
+        <button type="button" onclick="adicionarNumero(4)">4</button>
+        <button type="button" onclick="adicionarNumero(5)">5</button>
+        <button type="button" onclick="adicionarNumero(6)">6</button>
+        <button type="button" class="operacoes" onclick="operacaoSubtracao()">-</button>
+      </div>
+      <div class="linhaCalculadora">
+        <button type="button" onclick="adicionarNumero(1)">1</button>
+        <button type="button" onclick="adicionarNumero(2)">2</button>
+        <button type="button" onclick="adicionarNumero(3)">3</button>
+        <button type="button" class="operacoes" onclick="operacaoMultiplicacao()">*</button>
+      </div>
+      <div class="linhaCalculadora">
+        <button type="button" onclick="adicionarNumero(0)">0</button>
+        <button type="button" class="operacoes" onclick="operacaoDivisao()">÷</button>
+        <button type="button" class="buttonResultado" onclick="operacaoResultado()">=</button>
+      </div>
+   
+    </div>
+  </div>
+</body>
+</html>
